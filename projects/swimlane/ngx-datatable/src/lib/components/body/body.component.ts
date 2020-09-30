@@ -772,7 +772,8 @@ export class DataTableBodyComponent implements OnInit, OnDestroy {
       }
     }
 
-    return this.getRowExpandedIdx(row, this.rowExpansions) > -1;
+    return true;
+    // return this.getRowExpandedIdx(row, this.rowExpansions) > -1;
   }
 
   getRowExpandedIdx(row: any, expanded: any[]): number {
